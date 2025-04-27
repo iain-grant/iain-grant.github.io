@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a developer portfolio for Iain Grant.">
+    <meta name="author" content="Iain Grant">
+    <meta name="keywords" content="HTML, CSS, Assignment, Web Development">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header role="banner"></header>
+        <h1>Welcome to My Web Page</h1>
+        <nav role="navigation"></nav>
+            <ul>
+                <li><a href="#home" tabindex="0">Home</a></li>
+                <li><a href="#about" tabindex="0">About</a></li>
+                <li><a href="#projects" tabindex="0">Projects</a></li>
+                <li><a href="#skills" tabindex="0">Skills</a></li>
+                <li><a href="#contact" tabindex="0">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section id="about-me" role="region" aria-labelledby="about-me-heading">
+            <h2 id="about-me-heading">About Me</h2>
+            <p>My name is Iain Grant, and I am passionate about web development. I enjoy creating user-friendly and visually appealing websites.</p>
+        </section>
+        <section id="projects" role="region" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <article role="article">
+                <h3>Project 1: Portfolio Website</h3>
+                <figure>
+                    <img src="placeholder1.jpg" alt="Screenshot of Portfolio Website" tabindex="0">
+                    <figcaption>A personal portfolio showcasing my skills and projects.</figcaption>
+                </figure>
+                <p>This project demonstrates my ability to create a responsive and visually appealing portfolio website.</p>
+            </article>
+            <article role="article">
+                <h3>Project 2: E-commerce Store</h3>
+                <figure>
+                    <img src="placeholder2.jpg" alt="Screenshot of E-commerce Store" tabindex="0">
+                    <figcaption>An online store with a user-friendly shopping experience.</figcaption>
+                </figure>
+                <p>This project highlights my skills in building an e-commerce platform with features like product listings and a shopping cart.</p>
+            </article>
+            <article role="article">
+                <h3>Project 3: Blog Platform</h3>
+                <figure>
+                    <img src="placeholder3.jpg" alt="Screenshot of Blog Platform" tabindex="0">
+                    <figcaption>A blogging platform for sharing articles and ideas.</figcaption>
+                </figure>
+                <p>This project showcases my ability to create a content management system for publishing and managing blog posts.</p>
+            </article>
+        </section>
+        <section id="skills" role="region" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul>
+                <li tabindex="0">HTML5, CSS3, and JavaScript</li>
+                <li tabindex="0">Responsive Web Design</li>
+                <li tabindex="0">Version Control with Git and GitHub</li>
+                <li tabindex="0">Front-End Frameworks (e.g., React, Bootstrap)</li>
+                <li tabindex="0">Back-End Development (e.g., Node.js, Express)</li>
+                <li tabindex="0">Database Management (e.g., MongoDB, SQL)</li>
+                <li tabindex="0">Problem-Solving and Debugging</li>
+                <li tabindex="0">Cross-Browser Compatibility</li>
+            </ul>
+        </section>
+        <section id="contact" role="region" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <form action="/submit-form" method="post" role="form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required tabindex="0">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required tabindex="0">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required tabindex="0"></textarea>
+                </div>
+                <div>
+                    <button type="submit" tabindex="0">Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <p>&copy; 2025 Iain Grant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<script src="script.js"></script>

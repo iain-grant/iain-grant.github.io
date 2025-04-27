@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+section.about-me {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px auto;
+    padding: 20px;
+    line-height: 1.8;
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+ul.skills-list li {
+    font-size: 18px;
+    margin: 10px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+ul.skills-list li::before {
+    content: "✔"; /* You can replace this with any icon or symbol */
+    color: #4CAF50;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        flex: none;
+    }
+
+    section.about-me {
+        margin: 10px;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    ul.skills-list {
+        margin: 10px;
+        padding: 0 10px;
+    }
+
+    ul.skills-list li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    section.about-me {
+        font-size: 14px;
+    }
+
+    ul.skills-list li {
+        font-size: 14px;
+    }
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Vendor prefixes for CSS properties */
+section.about-me {
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+ul.skills-list li::before {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+img, video {
+    -webkit-max-width: 100%;
+    -moz-max-width: 100%;
+    max-width: 100%;
+    -webkit-height: auto;
+    -moz-height: auto;
+    height: auto;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    padding: 14px 20px;
+    background-color: #333;
+    border: none;
+    text-align: center;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+nav ul {
+    display: none;
+    flex-direction: column;
+}
+
+nav ul.active {
+    display: flex;
+}
+
+/* Show hamburger menu on smaller screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
