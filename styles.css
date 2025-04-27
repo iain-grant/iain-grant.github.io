@@ -165,42 +165,31 @@ img, video {
     height: auto;
 }
 
-/* Hamburger menu styles */
-.hamburger {
+/* Hamburger menu icon styles */
+.hamburger-icon {
     display: none;
     cursor: pointer;
     font-size: 24px;
-    color: white;
+    color: rgb(107, 107, 107);
     padding: 14px 20px;
     background-color: #333;
     border: none;
     text-align: center;
 }
 
-.hamburger:focus {
-    outline: none;
-}
-
-nav ul {
-    display: none;
-    flex-direction: column;
-}
-
-nav ul.active {
-    display: flex;
-}
-
-/* Show hamburger menu on smaller screens */
+/* Show hamburger icon on smaller screens */
 @media (max-width: 768px) {
-    .hamburger {
+    .hamburger-icon {
         display: block;
     }
 
     nav ul {
         display: none;
+        flex-direction: column;
     }
 
     nav ul.active {
         display: flex;
     }
 }
+

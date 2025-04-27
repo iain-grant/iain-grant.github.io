@@ -1,11 +1,3 @@
-function toggleMenu() {
-    const menu = document.querySelector('.navigation-menu');
-    menu.classList.toggle('visible');
-}
-
-// Add an event listener to the hamburger icon
-const hamburgerIcon = document.querySelector('.hamburger-icon');
-hamburgerIcon.addEventListener('click', toggleMenu);
 
 // Implement smooth scrolling for navigation links
 const navLinks = document.querySelectorAll('.navigation-menu a[href^="#"]');
@@ -183,18 +175,4 @@ if (contactForm) {
             clearError(message);
         }
     });
-}
-
-// Dynamically add a hamburger element to the navigation
-const navigation = document.querySelector('.navigation');
-
-if (navigation) {
-    const hamburger = document.createElement('div');
-    hamburger.classList.add('hamburger-icon');
-    hamburger.innerHTML = `
-        <span></span>
-        <span></span>
-        <span></span>
-    `;
-    navigation.insertBefore(hamburger, navigation.firstChild);
 }
